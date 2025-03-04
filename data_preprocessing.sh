@@ -7,7 +7,7 @@ DATASET=/workspace/dataset
 for i in $(seq -w 00 07); do
     python tools/preprocess_data.py \
         --input $DATASET/pile/${i}.jsonl \
-        --output-prefix $DATASET/pile_gpt_test/${i} \
+        --output-prefix $DATASET/pile_gpt2/${i} \
         --vocab-file $DATASET/gpt2-vocab.json \
         --tokenizer-type GPT2BPETokenizer \
         --merge-file $DATASET/gpt2-merges.txt \

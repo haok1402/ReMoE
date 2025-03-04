@@ -18,21 +18,21 @@ mkdir -p $CHECKPOINT_PATH
 
 PILE_DATASET="\
 1.0 \
-/workspace/dataset/pile_gpt_test/00_text_document \
+/workspace/dataset/pile_gpt2/00_text_document \
 1.0 \
-/workspace/dataset/pile_gpt_test/01_text_document \
+/workspace/dataset/pile_gpt2/01_text_document \
 1.0 \
-/workspace/dataset/pile_gpt_test/02_text_document \
+/workspace/dataset/pile_gpt2/02_text_document \
 1.0 \
-/workspace/dataset/pile_gpt_test/03_text_document \
+/workspace/dataset/pile_gpt2/03_text_document \
 1.0 \
-/workspace/dataset/pile_gpt_test/04_text_document \
+/workspace/dataset/pile_gpt2/04_text_document \
 1.0 \
-/workspace/dataset/pile_gpt_test/05_text_document \
+/workspace/dataset/pile_gpt2/05_text_document \
 1.0 \
-/workspace/dataset/pile_gpt_test/06_text_document \
+/workspace/dataset/pile_gpt2/06_text_document \
 1.0 \
-/workspace/dataset/pile_gpt_test/07_text_document"
+/workspace/dataset/pile_gpt2/07_text_document"
 
 DISTRIBUTED_ARGS=(
     --nnodes $SLURM_NNODES
