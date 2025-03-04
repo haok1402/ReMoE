@@ -11,7 +11,7 @@ TRAIN_ITERS=${2:-"60000"}
 MICRO_BATCH_SIZE=${3:-"16"}
 NUM_EXPERTS=${4:-"8"}
 GRANILARITY=${5:-"1"}
-PROJECT_NAME=${6:-"test"}
+PROJECT_NAME=train_llama_469m_remoe
 
 CHECKPOINT_PATH=/workspace/weights/$PROJECT_NAME
 mkdir -p $CHECKPOINT_PATH
