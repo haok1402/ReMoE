@@ -106,7 +106,6 @@ TRAINING_ARGS=(
 )
 
 MODEL_PARALLEL_ARGS=(
-    --no-gradient-accumulation-fusion # https://github.com/NVIDIA/Megatron-LM/issues/112
     --tensor-model-parallel-size 1
     --pipeline-model-parallel-size 1
     --expert-model-parallel-size 1
