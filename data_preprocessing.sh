@@ -1,10 +1,13 @@
-for i in $(seq -w 0 29); do
+cd /workspace/ReMoE
+DATASET=/workspace/dataset
+
+for i in $(seq -w 00 02); do
     python tools/preprocess_data.py \
-        --input ../pile/${i}.jsonl \
-        --output-prefix ../pile_gpt_test/${i} \
-        --vocab-file ../gpt2-vocab.json \
+        --input $DATASET/pile/${i}.jsonl \
+        --output-prefix $DATASET/pile_gpt_test/${i} \
+        --vocab-file $DATASET/gpt2-vocab.json \
         --tokenizer-type GPT2BPETokenizer \
-        --merge-file ../gpt2-merges.txt \
+        --merge-file $DATASET/gpt2-merges.txt \
         --append-eod \
         --workers 32
 done
