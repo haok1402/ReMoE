@@ -1,3 +1,6 @@
+#!/bin/bash
+# Run the processing inside the container.
+
 cd /workspace/ReMoE
 DATASET=/workspace/dataset
 
