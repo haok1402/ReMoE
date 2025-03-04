@@ -4,7 +4,7 @@
 cd /workspace/ReMoE
 DATASET=/workspace/dataset
 
-for i in $(seq -w 00 02); do
+for i in $(seq -w 00 07); do
     python tools/preprocess_data.py \
         --input $DATASET/pile/${i}.jsonl \
         --output-prefix $DATASET/pile_gpt_test/${i} \
